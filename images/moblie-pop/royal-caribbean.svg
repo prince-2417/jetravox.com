@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" width="33" height="32">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m5.26 11.1l-0.76-7.81 4.63 3.33-1.64 1.82 2.6 1.79 3.91-1.74-1.51-1.94 4.01-3.88 4.01 3.88-1.51 1.94 3.91 1.74 2.6-1.79-1.64-1.82 4.63-3.33-0.76 7.81zm0.14 1.41l0.25 2.6h8.34v9h-4.06c-0.9 0-1.68-0.7-1.68-1.51 0-0.81 0.86-1.51 1.81-2.05l-4.16-2.88 0.77 7.92 9.84 3.74 9.84-3.74 0.77-7.92-4.16 2.88c0.95 0.54 1.81 1.24 1.81 2.05 0 0.81-0.78 1.51-1.68 1.51h-4.06v-9h8.34l0.25-2.6h-22.22z"/>
+		</clipPath>
+		<image  width="33" height="32" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgAQMAAACmdoOJAAAAAXNSR0IB2cksfwAAAANQTFRFAAAAp3o92gAAAA9JREFUeJxjZAABxiFLAgANIAAhPCv9GAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		.s0 { fill: #ffffff } 
+	</style>
+	<g clip-path="url(#cp1)">
+		<path class="s0" d="m5.26 11.1l-0.76-7.81 4.63 3.33-1.64 1.82 2.6 1.79 3.91-1.74-1.51-1.94 4.01-3.88 4.01 3.88-1.51 1.94 3.91 1.74 2.6-1.79-1.64-1.82 4.63-3.33-0.76 7.81zm0.14 1.41l0.25 2.6h8.34v9h-4.06c-0.9 0-1.68-0.7-1.68-1.51 0-0.81 0.86-1.51 1.81-2.05l-4.16-2.88 0.77 7.92 9.84 3.74 9.84-3.74 0.77-7.92-4.16 2.88c0.95 0.54 1.81 1.24 1.81 2.05 0 0.81-0.78 1.51-1.68 1.51h-4.06v-9h8.34l0.25-2.6h-22.22z"/>
+		<use id="Layer 1" href="#img1" x="0" y="0"/>
+	</g>
+</svg>

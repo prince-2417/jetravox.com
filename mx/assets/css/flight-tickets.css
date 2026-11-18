@@ -1,0 +1,310 @@
+/* ------------------
+Footer Call Mobile 
+--------------------*/
+.footerttf {
+    display: none;
+}
+
+/* Mobile only */
+@media (max-width: 767px) {
+    .footerttf {
+        display: block;
+        position: fixed;
+        bottom: -100px;
+        /* hidden initially */
+        left: 0;
+        width: 100%;
+        background: var(--color-red-500);
+        z-index: 9999;
+        border-radius: 30px;
+        transition: bottom 0.4s ease;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .footerttf.show {
+        bottom: 0;
+    }
+
+    .footerTfn a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 15px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 28px;
+    }
+
+    .footerTfn svg {
+        width: 34px;
+        height: 34px;
+        flex-shrink: 0;
+    }
+
+    .footCont span {
+        font-size: 13px;
+        display: block;
+        line-height: 1.2;
+    }
+
+    .footCont h3 {
+        margin: 0;
+        font-size: 32px;
+        font-weight: 900;
+        color: #fff;
+        align-items: center;
+    }
+
+    #my-footer {
+        padding-left: 30px;
+    }
+}
+
+/* ------------------
+   Header Call Mobile 
+----------------------*/
+.fixed.top-0.left-0.right-0.w-full.py-3.px-4 {
+    display: none;
+}
+
+/* Mobile only */
+@media (max-width: 767px) {
+
+    .fixed.top-0.left-0.right-0.w-full.py-3.px-4 {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99999;
+        background: var(--color-red-500);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, .25);
+        animation: topBarSlide .5s ease;
+    }
+
+    header {
+        margin-top: 0 !important;
+        top: auto !important;
+    }
+
+    header.header,
+    .header,
+    .site-header,
+    .navbar {
+        top: auto !important;
+    }
+
+    body {
+        padding-top: 72px;
+        /* keep this, adjust if bar height changes */
+    }
+
+    /* Optional: make nav safe under fixed bar */
+    nav#topnav {
+        position: sticky;
+        top: 72px;
+        z-index: 9999;
+    }
+
+    .fixed.top-0.left-0.right-0.w-full.py-3.px-4 a[href^="tel"] {
+        transition: .3s;
+    }
+
+    .fixed.top-0.left-0.right-0.w-full.py-3.px-4 a[href^="tel"]:hover {
+        transform: scale(1.08);
+    }
+
+    .fixed.top-0.left-0.right-0.w-full.py-3.px-4 svg {
+        animation: floatPhone 2s ease-in-out infinite;
+    }
+
+    .fixed.top-0.left-0.right-0.w-full.py-3.px-4 .font-bold {
+        font-size: 22px;
+    }
+}
+
+
+/* ------------------------
+    Mobile Content Section 
+---------------------------- */
+#mobile-content {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    /* Main Section */
+    #mobile-content {
+        display: block;
+    }
+
+    /* Top Heading Card */
+    #mobile-content .bg-gradient-to-r.from-primary\/10 {
+        background: linear-gradient(135deg,
+                color-mix(in oklab, var(--color-red-500) 15%, white),
+                color-mix(in oklab, var(--color-red-500) 5%, white));
+        border-color: color-mix(in oklab, var(--color-red-500) 25%, white);
+        box-shadow: 0 10px 30px rgba(220, 38, 38, .08);
+    }
+
+    /* Banner */
+    #mobile-content .shadow-lg {
+        box-shadow:
+            0 12px 35px rgba(220, 38, 38, .15),
+            0 3px 10px rgba(0, 0, 0, .08);
+    }
+
+    /* Booking Buttons */
+    #mobile-content a[href^="tel"] {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #mobile-content .bg-primary {
+        background: linear-gradient(135deg,
+                var(--color-red-500),
+                color-mix(in oklab, var(--color-red-500) 75%, black)) !important;
+
+        box-shadow:
+            0 8px 25px rgba(220, 38, 38, .28);
+    }
+
+    #mobile-content .bg-primary:hover {
+        transform: translateY(-2px);
+    }
+
+    /* Feature Cards */
+    #mobile-content .bg-white {
+        transition: .35s ease;
+    }
+
+    #mobile-content .bg-white:hover {
+        transform: translateY(-4px);
+        border-color: color-mix(in oklab, var(--color-red-500) 25%, white);
+        box-shadow:
+            0 12px 25px rgba(220, 38, 38, .12);
+    }
+
+    /* Icons */
+    #mobile-content .text-primary {
+        color: var(--color-red-500) !important;
+    }
+
+    #mobile-content svg {
+        transition: .35s ease;
+    }
+
+    #mobile-content .bg-white:hover svg {
+        transform: scale(1.15);
+    }
+
+    /* Divider */
+    #mobile-content .w-20.h-1 {
+        background: linear-gradient(90deg,
+                var(--color-red-500),
+                color-mix(in oklab, var(--color-red-500) 40%, white));
+        height: 5px;
+        width: 90px;
+    }
+
+    /* Agent Image */
+    #mobile-content img[src*="callingGirl"] {
+        border: 4px solid var(--color-red-500);
+        box-shadow:
+            0 0 0 8px rgba(220, 38, 38, .08),
+            0 15px 30px rgba(220, 38, 38, .18);
+    }
+
+    /* Call Button */
+    #mobile-content .shadow-xl {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #mobile-content .shadow-xl::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -120%;
+        width: 80%;
+        height: 100%;
+        background: linear-gradient(90deg,
+                transparent,
+                rgba(255, 255, 255, .35),
+                transparent);
+        animation: shine 3s infinite;
+    }
+
+    /* Bottom Notice */
+    #mobile-content .from-amber-50 {
+        background:
+            linear-gradient(135deg,
+                rgba(255, 247, 237, 1),
+                rgba(254, 242, 242, 1));
+        border-color:
+            color-mix(in oklab, var(--color-red-500) 25%, white);
+    }
+
+    /* Heading */
+    #mobile-content h2,
+    #mobile-content h5 {
+        letter-spacing: -.3px;
+    }
+
+    #mobile-content .grid.grid-cols-2 {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+    }
+
+    #mobile-content .grid.grid-cols-2 a {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 150%;
+    }
+}
+
+/* Animations */
+
+@keyframes mobileContentFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatAgent {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}

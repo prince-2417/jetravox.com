@@ -1,0 +1,693 @@
+#my-style {
+    padding: 0;
+}
+
+.top-bar {
+    background: var(--color-red-500);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+/* Make link behave nicely */
+.top-bar a {
+    text-align: end;
+    color: white;
+    text-decoration: none;
+}
+
+.top-bar p {
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column;
+    }
+
+    .top-bar {
+        flex-direction: row;
+        /* FIX: was wrong (gird) */
+        justify-content: space-between;
+        font-size: 16px;
+    }
+
+    #topnav {
+        display: none;
+    }
+
+    #my-style {
+        padding-top: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .top-bar {
+        display: none;
+    }
+
+    .footerttf {
+        display: none;
+    }
+
+    #my-style {
+        padding-top: 80px;
+    }
+}
+
+
+/*=========== Hero Section ======== */
+.hero {
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 50px 20px;
+    background: linear-gradient(#e3f2fd, #fff);
+    text-align: left;
+    /* gap: 30px; */
+    margin-bottom: 30px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.hero h1 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.features {
+    color: #fff;
+    font-size: 22px;
+}
+
+.features i {
+    color: rgb(54, 146, 54);
+}
+
+.rating {
+    color: #fff;
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.content1 {
+    margin-top: 10px;
+}
+
+.buttons1 {
+    margin-top: 15px;
+}
+
+.btn1 {
+    padding: 10px 20px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.red {
+    background: var(--color-red-500);
+    color: white;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+
+    .hero h1 {
+        text-align: center;
+        line-height: 50px
+    }
+
+    .hero h4 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .features {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .features li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: flex-start;
+    }
+
+    .red {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .buttons1 {
+        display: flex;
+        font-size: 14px;
+    }
+
+    .rating {
+        font-size: 18px;
+    }
+
+}
+
+/* ======= Hero Section ======= */
+
+
+/* ======= top cruise line offers ======= */
+.cruise-lines {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.cruise-lines h2 {
+    font-size: 55px;
+    color: #1a3c6e;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+    text-align: center;
+}
+
+.logo-item img {
+    max-width: 80px;
+    height: 80px;
+    margin-bottom: 8px;
+}
+
+.logo-item span {
+    font-size: 14px;
+    color: #1a3c6e;
+    font-weight: 500;
+}
+
+
+.call-btn {
+    background: var(--color-red-500);
+    color: #fff;
+    font-size: 28px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 768px) {
+    .logos {
+        gap: 15px;
+    }
+
+    .cruise-lines h2 {
+        font-size: 28px;
+        line-height: 30px
+    }
+
+    .logo-item img {
+        display: flex;
+        max-width: 50px;
+        height: 50px;
+    }
+
+    .call-btn {
+        width: 100%;
+    }
+}
+
+/* ======= top cruise line offers ======= */
+
+/* =======- customize section ======== */
+.customize-packages {
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.customize-packages h2 {
+    font-size: 55px;
+    color: #1a3c6e;
+    margin-bottom: 30px;
+}
+
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.package-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.package-card h3 {
+    color: #1a3c6e;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.package-card p {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.call-btn1 {
+    background: var(--color-red-500);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .package-card {
+        width: 38%;
+    }
+
+    .package-card {
+        margin-bottom: 15px;
+    }
+
+    .customize-packages h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .package-card p {
+        font-size: 10px;
+        margin-bottom: 1px;
+    }
+
+    .package-card h3 {
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .package-card img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .call-btn1 {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .package-card img {
+        width: 100%;
+        height: 200px;
+    }
+
+}
+
+/* =======- customize section ======== */
+
+
+/* =======- destinations section ======== */
+.destination {
+    max-width: 1100px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    padding: 30px;
+    color: #fff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left {
+    max-width: 500px;
+}
+
+.destination h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    color: #1a3c6e;
+    font-weight: 700;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon.blue {
+    background-color: #3498db;
+}
+
+.icon.orange {
+    background-color: #e67e22;
+}
+
+.icon.red {
+    background-color: #e74c3c;
+}
+
+.icon.green {
+    background-color: #2ecc71;
+}
+
+
+.button2 button {
+    background-color: var(--color-red-500);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .left {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .destination h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
+
+/* =======- destinations section ======== */
+
+/* =======- Why Book With Us section ======== */
+.section1 {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #eef3f8;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section1 h2 {
+    font-size: 55px;
+    color: #1f3c88;
+    margin-bottom: 25px;
+    position: relative;
+    font-weight: 700;
+}
+
+.locations {
+    margin-bottom: 25px;
+}
+
+.location {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 22px;
+    color: #1f3c88;
+    font-weight: bold;
+}
+
+.icon {
+    color: rgb(54, 146, 54);
+    font-size: 20px;
+}
+
+.button {
+    margin-top: 10px;
+}
+
+.button button {
+    background: var(--color-red-500);
+    border: none;
+    padding: 14px 30px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive */
+@media(max-width:768px) {
+    .section h2 {
+        font-size: 22px;
+    }
+
+    .section1 h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .location {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+
+/* =======- Why Book With Us section ======== */
+
+/* ======== CTA Sections ======= */
+.cta {
+    background: #fff3e0;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cta h2 {
+    font-size: 55px;
+    color: var(--color-red-500);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.cta p {
+    color: #1f3c88;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cta h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
+
+/* ======== CTA Sections ======= */
+
+
+/* ======== ready to book Sections ======= */
+
+/* Tabs */
+.card1 {
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card1 h2 {
+    font-size: 55px;
+    color: #1f3c88;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1565c0;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .card1 {
+        padding: 15px;
+    }
+
+    .card1 h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+}
+
+/* ======== ready to book Sections ======= */
+
+* ------------------ Footer Call Mobile --------------------*/
+
+/* Default hide */
+.footerttf {
+    display: none;
+}
+
+/* Mobile only */
+@media (max-width: 767px) {
+    .footerttf {
+        display: block;
+        position: fixed;
+        bottom: -100px;
+        /* hidden initially */
+        left: 0;
+        width: 100%;
+        background: var(--color-red-500);
+        z-index: 9999;
+        border-radius: 30px;
+        transition: bottom 0.4s ease;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .footerttf.show {
+        bottom: 0;
+    }
+
+    .footerTfn a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 15px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 28px;
+    }
+
+    .footerTfn svg {
+        width: 34px;
+        height: 34px;
+        flex-shrink: 0;
+    }
+
+    .footCont span {
+        font-size: 13px;
+        display: block;
+        line-height: 1.2;
+    }
+
+    .footCont h3 {
+        margin: 0;
+        font-size: 32px;
+        font-weight: 900;
+        color: #fff;
+        align-items: center;
+    }
+
+    #my-footer {
+        padding-left: 30px;
+    }
+}

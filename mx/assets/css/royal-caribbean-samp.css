@@ -1,0 +1,1515 @@
+/* ==========================================
+   RESET
+========================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #111b32;
+    background: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.site-header {
+    width: 100%;
+    height: 114px;
+    background: #ffffff;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+    z-index: 1000;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1536px;
+    height: 100%;
+    margin: auto;
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+/* Logo */
+
+.brand-logo {
+    width: 150px;
+    flex-shrink: 0;
+}
+
+.brand-logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Navigation */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    flex: 1;
+}
+
+.nav-link {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #000000;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ed8b00;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: #ed8b00;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+
+/* Header Call */
+
+.header-call-btn {
+    min-width: 265px;
+    padding: 12px 18px;
+    background: #ed8b00;
+    color: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+.header-call-btn:hover {
+    background: #d97800;
+    transform: translateY(-2px);
+    box-shadow:
+        0 8px 20px rgba(237, 139, 0, 0.25);
+}
+
+.call-icon {
+    font-size: 28px;
+}
+
+.call-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.call-content small {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.call-content strong {
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+
+/* Mobile Toggle */
+
+.menu-toggle {
+    display: none;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 27px;
+    height: 3px;
+    background: #111b32;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero-section {
+    min-height: 560px;
+    position: relative;
+    background-image: url("../../images/samp-cruise/2cruise.png");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+/* Dark overlay */
+
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+            rgba(0, 0, 0, 0.55) 0%,
+            rgba(0, 0, 0, 0.2) 50%,
+            rgba(0, 0, 0, 0.05) 100%);
+}
+
+
+/* Hero Container */
+
+.hero-container {
+    position: relative;
+
+    width: 100%;
+    max-width: 1536px;
+
+    margin: auto;
+
+    padding: 70px 70px;
+
+    z-index: 2;
+}
+
+
+/* Hero Content */
+
+.hero-content {
+    max-width: 560px;
+
+    color: #ffffff;
+
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: clamp(35px, 4vw, 62px);
+
+    line-height: 1.15;
+
+    font-weight: 800;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+.hero-content h1 span {
+    display: block;
+
+    color: #ff9d00;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    font-weight: 500;
+
+    max-width: 500px;
+
+    margin-bottom: 30px;
+
+    text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+
+/* Hero Call Box */
+
+.hero-call-box {
+    width: 370px;
+
+    background: #527de5;
+
+    padding: 18px 25px 22px;
+
+    border-radius: 4px;
+
+    text-align: center;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+.hero-call-box:hover {
+    transform: translateY(-5px);
+
+    background: #456fd3;
+}
+
+.whatsapp-icon {
+    width: 52px;
+    height: 52px;
+
+    margin: 0 auto 10px;
+
+    border: 3px solid #ffffff;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+
+    color: #ffffff;
+}
+
+.hero-call-box p {
+    font-size: 18px;
+
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+.hero-call-box a {
+    font-size: 31px;
+
+    font-weight: 800;
+
+    color: #ffffff;
+
+    letter-spacing: 1px;
+}
+
+
+/* ==========================================
+   BENEFITS
+========================================== */
+
+.benefits-section {
+    width: 100%;
+
+    background: #304fa0;
+
+    color: #ffffff;
+}
+
+.benefits-container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 18px 25px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.benefit-item:last-child {
+    border-right: none;
+}
+
+.benefit-icon {
+    width: 48px;
+    height: 48px;
+
+    border: 2px solid #ffffff;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+
+    flex-shrink: 0;
+}
+
+.benefit-content h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.benefit-content p {
+    font-size: 11px;
+    line-height: 1.4;
+    opacity: 0.85;
+}
+
+
+/* ==========================================
+   ABOUT SECTION
+========================================== */
+
+.about-section {
+    padding: 40px 25px;
+    background: #ffffff;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-content h2 {
+    font-size: 30px;
+    line-height: 1.1;
+    color: #4c4c4c;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.about-content p {
+    font-size: 14px;
+    color: #4c4c4c;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   LARGE LAPTOP
+========================================== */
+
+@media (max-width: 1300px) {
+
+    .header-container {
+        padding: 0 25px;
+    }
+
+    .brand-logo {
+        width: 200px;
+    }
+
+    .main-nav {
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 11px;
+    }
+
+    .header-call-btn {
+        min-width: 230px;
+    }
+
+    .call-content strong {
+        font-size: 18px;
+    }
+
+    .hero-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1024px) {
+
+    .site-header {
+        height: 90px;
+    }
+
+    .brand-logo {
+        width: 180px;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        padding: 25px;
+        display: none;
+        flex-direction: column;
+        gap: 25px;
+        box-shadow:
+            0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .header-call-btn {
+        margin-left: auto;
+
+        min-width: auto;
+
+        padding: 10px 14px;
+    }
+
+    .call-content small {
+        font-size: 9px;
+    }
+
+    .call-content strong {
+        font-size: 15px;
+    }
+
+    .call-icon {
+        font-size: 20px;
+    }
+
+
+    .about-container {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+        max-width: 750px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .site-header {
+        height: 75px;
+    }
+
+    .header-container {
+        padding: 0 18px;
+        gap: 10px;
+    }
+
+    .brand-logo {
+        width: 145px;
+    }
+
+    .header-call-btn {
+        padding: 8px 10px;
+        gap: 7px;
+    }
+
+    .call-content small {
+        display: none;
+    }
+
+    .call-content strong {
+        font-size: 12px;
+    }
+
+    .call-icon {
+        font-size: 17px;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main-nav {
+        top: 75px;
+    }
+
+    .hero-section {
+        display: none
+    }
+
+    .benefits-container {
+        display: none
+    }
+
+    .features-section {
+        display: none
+    }
+
+    .heading-section {
+        padding-top: 20px !important;
+    }
+
+    .cruise-grid {
+        grid-template-columns:
+            repeat(1, minmax(0, 1fr)) !important;
+
+    }
+
+    /* About */
+
+    .about-section {
+        padding: 60px 20px;
+    }
+
+    .about-container {
+        gap: 35px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .site-header {
+        height: 68px;
+    }
+
+    .header-container {
+        padding: 0 12px;
+    }
+
+    .brand-logo {
+        width: 120px;
+    }
+
+    .header-call-btn {
+        padding: 7px 8px;
+    }
+
+    .call-content strong {
+        font-size: 10px;
+    }
+
+    .call-icon {
+        font-size: 14px;
+    }
+
+    .menu-toggle {
+        width: 35px;
+    }
+
+    .main-nav {
+        top: 68px;
+    }
+
+    .about-content h2 {
+        font-size: 27px;
+    }
+
+}
+
+
+/* ==========================================
+   EXTRA SMALL MOBILE
+========================================== */
+
+@media (max-width: 360px) {
+
+    .brand-logo {
+        width: 105px;
+    }
+
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.heading-section {
+    padding: 0 0 40px;
+    background: #f8f8fc;
+}
+
+.heading-section h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+}
+
+
+/* =========================================
+   CRUISE SECTION
+========================================= */
+
+.cruise-section {
+    padding-top: 40px;
+    background: #ffffff;
+}
+
+
+/* =========================================
+   CRUISE GRID
+========================================= */
+
+.cruise-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+    gap: 18px 28px;
+}
+
+
+/* =========================================
+   CRUISE CARD
+========================================= */
+
+.cruise-card {
+    min-height: 162px;
+    background: #ffffff;
+    border: 1px solid #c8c8c8;
+    border-radius: 9px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns:
+        135px minmax(0, 1fr) 165px;
+    transition:
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.cruise-card:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================
+   CRUISE IMAGE
+========================================= */
+
+.cruise-image {
+    width: 135px;
+    height: 100%;
+    min-height: 162px;
+    overflow: hidden;
+}
+
+.cruise-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition:
+        transform 0.5s ease;
+}
+
+.cruise-card:hover .cruise-image img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================
+   CRUISE DETAILS
+========================================= */
+
+.cruise-details {
+    padding: 10px 6px;
+    min-width: 0;
+}
+
+.cruise-brand {
+    width: 100px;
+    padding-bottom: 5px;
+    object-fit: contain;
+}
+
+
+.cruise-details h2 {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #07506a;
+    margin-bottom: 7px;
+}
+
+.cruise-info {
+    font-size: 12px;
+    line-height: 1.45;
+    color: #777777;
+    margin-bottom: 6px;
+}
+
+.itinerary-btn {
+    border: none;
+    padding: 0;
+    background: transparent;
+    color: #2686cf;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.itinerary-btn:hover {
+    text-decoration: underline;
+}
+
+.itinerary-body {
+    display: none;
+    margin-top: 6px;
+    font-size: 11px;
+    color: #444;
+    line-height: 1.6;
+    background: #f0f6ff;
+    border-left: 3px solid #2686cf;
+    padding: 6px 8px;
+    border-radius: 3px;
+}
+
+.itinerary-body.open {
+    display: block;
+}
+
+
+/* =========================================
+   PRICE AREA
+========================================= */
+
+.cruise-price {
+    padding: 10px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.cruise-price p {
+    width: 100%;
+    font-size: 10px;
+    line-height: 1.4;
+    color: #666666;
+    margin-bottom: 1px;
+}
+
+.cruise-price p strong {
+    color: #505050;
+}
+
+.price-label {
+    margin-top: 5px;
+    font-size: 11px;
+    color: #777777;
+}
+
+.price {
+    font-size: 18px;
+    color: #07506a;
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   BOOKING BUTTON
+========================================= */
+
+.booking-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 26px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background: #7772e8;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.booking-btn:hover {
+    background: #5c57d6;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.features-section {
+    padding: 18px 0 55px;
+    background: #f8f8fc;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    min-height: 135px;
+    padding: 12px 25px;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+.feature-icon {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111111;
+    font-size: 32px;
+    margin-bottom: 2px;
+}
+
+.feature-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #444444;
+}
+
+
+/* =========================================
+   MOBILE CRUISE CARD - 425px AND BELOW
+   HTML CODE CHANGE NOT REQUIRED
+========================================= */
+
+@media (max-width: 425px) {
+
+    .cruise-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cruise-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border-radius: 10px;
+        background: #ffffff;
+        border: 1px solid #cfcfcf;
+    }
+
+    /* =========================
+       FULL WIDTH CRUISE IMAGE
+    ========================= */
+
+    .cruise-image {
+        width: 100%;
+        height: 175px;
+        min-height: 175px;
+        flex: none;
+        overflow: hidden;
+    }
+
+    .cruise-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+
+    /* =========================
+       CRUISE DETAILS
+    ========================= */
+
+    .cruise-details {
+        width: 100%;
+        padding: 14px 15px 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* =========================
+       AZAMARA LOGO
+    ========================= */
+
+    .cruise-details .cruise-brand {
+        width: 115px;
+        max-width: 115px;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto 12px;
+    }
+
+
+    /* =========================
+       CRUISE TITLE
+    ========================= */
+
+    .cruise-details h2 {
+        width: 100%;
+        margin: 0 auto 10px;
+        font-size: 14px;
+        line-height: 1.45;
+        font-weight: 600;
+        color: #07506a;
+        text-align: center;
+    }
+
+
+    /* =========================
+       CRUISE INFORMATION
+    ========================= */
+
+    .cruise-info {
+        width: 100%;
+        margin: 0 auto 10px;
+        font-size: 13px;
+        line-height: 1.55;
+        color: #777777;
+        text-align: center;
+    }
+
+
+    /* =========================
+       VIEW ITINERARY
+    ========================= */
+
+    .itinerary-btn {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #2686cf;
+        text-align: center;
+        background: transparent;
+        border: none;
+    }
+
+
+    /* =========================
+       PRICE SECTION
+    ========================= */
+
+    .cruise-price {
+        width: 100%;
+        padding: 12px 15px 15px;
+        border-top: 1px solid #d7d7d7;
+        background: #fafaff;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+
+    /* =========================
+       DEPARTURE / ARRIVAL
+    ========================= */
+
+    .cruise-price p {
+        width: 100%;
+        margin: 0 0 2px;
+        font-size: 12px;
+        line-height: 1.45;
+        color: #666666;
+        text-align: center;
+    }
+
+    .cruise-price p strong {
+        color: #555555;
+        font-weight: 700;
+    }
+
+
+    /* =========================
+       FARE LABEL
+    ========================= */
+
+    .price-label {
+        display: block;
+        margin-top: 8px;
+        margin-bottom: 2px;
+        font-size: 12px;
+        color: #777777;
+        text-align: center;
+    }
+
+
+    /* =========================
+       PRICE
+    ========================= */
+
+    .price {
+        display: block;
+        margin: 0 0 10px;
+        font-size: 21px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #07506a;
+        text-align: center;
+    }
+
+
+    /* =========================
+       BOOKING BUTTON
+    ========================= */
+
+    .booking-btn {
+        width: 195px;
+        min-height: 28px;
+        padding: 6px 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 auto;
+
+        border-radius: 20px;
+
+        background: #7772e8;
+        color: #ffffff;
+
+        font-size: 11px;
+        font-weight: 600;
+
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .booking-btn:hover {
+        background: #5c57d6;
+        transform: none;
+    }
+
+}
+
+
+
+
+/* =========================================
+   MOBILE SCROLL CALL BANNER
+   SHOW ONLY BELOW 576PX
+========================================= */
+
+.mobile-call-banner {
+    display: none;
+}
+
+
+/* =========================================
+   MOBILE ONLY
+========================================= */
+
+@media (max-width: 575px) {
+
+    .mobile-call-banner {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 95px;
+        background: #eeeeff;
+        border: 1px solid #7772e8;
+        border-radius: 7px 7px 0 0;
+        display: flex;
+        align-items: center;
+        z-index: 99999;
+        box-shadow:
+            0 -4px 15px rgba(0, 0, 0, 0.12);
+        transform: translateY(120%);
+        opacity: 0;
+        visibility: hidden;
+        transition:
+            transform 0.4s ease,
+            opacity 0.4s ease,
+            visibility 0.4s ease;
+        padding: 5px 10px 5px 5px;
+    }
+
+
+    /* SHOW BANNER AFTER SCROLL */
+    .mobile-call-banner.show {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    /* =========================================
+       AGENT IMAGE
+    ========================================= */
+
+    .mobile-call-banner .agent-image {
+        width: 62px;
+        height: 85px;
+        flex-shrink: 0;
+        object-fit: cover;
+        object-position: center;
+        align-self: flex-end;
+    }
+
+
+    /* =========================================
+       CONTENT
+    ========================================= */
+
+    .mobile-call-content {
+        flex: 1;
+        min-width: 0;
+        padding-left: 7px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    /* =========================================
+       TOP TEXT
+    ========================================= */
+
+    .mobile-call-text {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 3px;
+        margin-bottom: 3px;
+        white-space: nowrap;
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 900;
+        color: #000000;
+    }
+
+
+    /* =========================================
+       DISCOUNT BADGE
+    ========================================= */
+
+    .mobile-call-discount {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px 5px;
+        background: #4caf50;
+        color: #ffffff;
+        border-radius: 3px;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+
+    /* =========================================
+       INFO ICON
+    ========================================= */
+
+    .mobile-call-info {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #111111;
+        color: #ffffff;
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+
+    /* =========================================
+       PHONE NUMBER
+    ========================================= */
+
+    .mobile-call-number {
+        display: block;
+        color: #000000;
+        font-size: 28px;
+        line-height: 1;
+        font-weight: 800;
+        letter-spacing: 1px;
+        white-space: nowrap;
+    }
+
+
+    /* =========================================
+       PHONE ICON
+    ========================================= */
+
+    .mobile-call-button {
+        width: 54px;
+        height: 54px;
+        flex-shrink: 0;
+        margin-left: 5px;
+        border-radius: 50%;
+        background: #168b18;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 31px;
+        text-decoration: none;
+        box-shadow:
+            0 2px 6px rgba(0, 0, 0, 0.15);
+        transition:
+            transform 0.2s ease,
+            background 0.2s ease;
+    }
+
+
+    .mobile-call-button:hover {
+        background: #0e7511;
+
+        transform: scale(1.05);
+    }
+
+
+    /* =========================================
+       UP ARROW
+    ========================================= */
+
+    .mobile-call-close {
+        position: absolute;
+        top: -27px;
+        right: 6px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: none;
+        background: #075a94;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        cursor: pointer;
+        box-shadow:
+            0 2px 7px rgba(0, 0, 0, 0.25);
+        z-index: 3;
+    }
+
+
+    .mobile-call-close:hover {
+        background: #064d7e;
+    }
+
+
+    /* =========================================
+       425PX
+    ========================================= */
+
+    @media (max-width: 425px) {
+
+        .mobile-call-banner {
+            height: 92px;
+            padding-right: 8px;
+        }
+
+        .mobile-call-banner .agent-image {
+            width: 58px;
+            height: 82px;
+        }
+
+        .mobile-call-discount {
+            font-size: 10px;
+            padding:
+                3px 4px;
+        }
+
+        .mobile-call-info {
+            width: 14px;
+            height: 14px;
+            font-size: 9px;
+        }
+
+        .mobile-call-button {
+            width: 49px;
+            height: 49px;
+            font-size: 27px;
+        }
+
+    }
+
+
+    /* =========================================
+       375PX
+    ========================================= */
+
+    @media (max-width: 375px) {
+
+        .mobile-call-banner {
+            height: 85px;
+            padding:
+                4px 6px 4px 3px;
+        }
+
+        .mobile-call-banner .agent-image {
+            width: 52px;
+            height: 76px;
+        }
+
+        .mobile-call-text {
+            font-size: 11px;
+        }
+
+        .mobile-call-discount {
+            font-size: 9px;
+            padding:
+                3px;
+        }
+
+        .mobile-call-info {
+            width: 13px;
+            height: 13px;
+            font-size: 8px;
+        }
+
+        .mobile-call-number {
+            font-size: 28px;
+        }
+
+        .mobile-call-button {
+            width: 44px;
+            height: 44px;
+            font-size: 24px;
+        }
+
+        .mobile-call-close {
+            width: 34px;
+            height: 34px;
+            top: -24px;
+            font-size: 19px;
+        }
+
+    }
+
+
+    /* =========================================
+       320PX
+    ========================================= */
+
+    @media (max-width: 330px) {
+
+        .mobile-call-banner {
+            height: 78px;
+        }
+
+        .mobile-call-banner .agent-image {
+            width: 46px;
+            height: 70px;
+        }
+
+        .mobile-call-text {
+            font-size: 10px;
+        }
+
+        .mobile-call-discount {
+            font-size: 8px;
+        }
+
+        .mobile-call-number {
+            font-size: 23px;
+        }
+
+        .mobile-call-button {
+            width: 40px;
+            height: 40px;
+            font-size: 21px;
+        }
+
+    }
+
+}

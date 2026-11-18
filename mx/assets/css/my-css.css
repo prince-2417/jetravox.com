@@ -1,0 +1,21 @@
+@media (max-width: 720px) {
+
+.footer-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-contact{
+    grid-column: 1 / -1;
+}
+
+.footer-links{
+    grid-column: 1 / 2;
+}
+
+.footer-legal{
+    grid-column: 2 / 3;
+}
+
+}
+

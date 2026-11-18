@@ -1,0 +1,321 @@
+#my-buttons {
+  padding: 15px;
+}
+
+#my-buttons button {
+  padding: 10px;
+  border: none;
+  background: #004080;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.modal-body a {
+  text-decoration: none;
+}
+
+
+.agent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.agent-img {
+  width: 75px;
+  border-radius: 50%;
+  border: 4px solid #ccc;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.my-3 {
+  text-align: center;
+}
+
+/* Extra-responsive support for ALL mobile screen sizes */
+@media (max-width: 768px) {
+
+  /* Improve spacing and prevent overflow */
+  /* #my-buttons button {
+        font-size: 18px;
+        padding: 9px;
+    } */
+
+  #my-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  #my-buttons button {
+    flex: 1 1 calc(50% - 10px);
+    /* two per row */
+  }
+
+  .airplane-img {
+    width: 80%;
+  }
+
+  .agent-img {
+    width: 60px;
+  }
+
+  .utmCall-wrap a {
+    font-size: 24px;
+    margin-right: 70px;
+  }
+
+  .utmCall-wrap img {
+    width: 40px;
+  }
+
+  .popup-header a {
+    margin-right: 5px;
+    font-weight: bold;
+  }
+
+  /* Adjust text for readability */
+  h3,
+  .my-3 b {
+    font-size: 18px;
+  }
+
+  /* Improve CTA button appearance */
+  .btnCall .nbrs {
+    font-size: 27px;
+  }
+
+  #my-call {
+    margin-left: 85px;
+  }
+}
+
+/* Ultra-small devices (320px – 400px) */
+@media (max-width: 400px) {
+
+
+  #my-buttons button {
+    flex: 1 1 calc(50% - 10px) !important;
+
+  }
+
+  #my-buttons button {
+    flex: 1 1 100%;
+    /* font-size: 17px; */
+    padding: 8px;
+  }
+
+  .utmCall-wrap img {
+    width: 30px;
+
+  }
+
+  .utmCall-wrap a {
+    font-size: 20px;
+    margin-right: 40px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .btnCall .nbrs {
+    font-size: 22px;
+  }
+
+  .btnCall span {
+    margin-right: 40px;
+  }
+
+  .agent-img {
+    width: 60px;
+  }
+
+  .modal-body img {
+    max-width: 80%;
+    margin-left: 20px;
+  }
+
+  #my-call {
+    margin-left: 60px;
+  }
+}
+
+/* Mobile full-screen modal */
+@media (max-width: 576px) {
+  .modal-dialog {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+
+  #exampleModal {
+    background: linear-gradient(180deg,
+        rgba(192, 219, 236, 1) 0%,
+        rgba(240, 241, 243, 1) 53%,
+        rgba(201, 228, 245, 1) 100%);
+  }
+
+  .modal-content {
+    border-radius: 0;
+    border: none;
+  }
+
+  .modal-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0px;
+  }
+
+  .modal-header {
+    padding: 6px;
+  }
+
+  .modal-body h3 {
+    background-color: #1b3357;
+    margin: 0px;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    font-size: 22px;
+  }
+
+  .modal-body img {
+    max-width: 100%;
+    margin-left: 50px;
+  }
+
+  .modal-header {
+    border: none;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .popup-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  /* .popup-header a,
+    b {
+        margin-right: 15px;
+    } */
+
+  .utmCall-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    padding-left: 20px;
+  }
+
+  .utmCall-wrap a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .reservationText button {
+    background: #fe5a04;
+    border-radius: 50px;
+    padding: 9px 15px;
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-weight: bold;
+  }
+
+  .reservationText {
+    margin: 11px 10px;
+  }
+
+  .my-3 b {
+    color: #444;
+    text-align: center;
+  }
+
+  .btnCall {
+    background-color: #fe5a04 !important;
+    border-radius: 50px;
+    margin-top: 5px;
+  }
+
+  .btnCall img {
+    width: 50px;
+    padding: 10px;
+    margin-left: 50px;
+  }
+
+  .btnCall .nbrs {
+    color: #fff;
+    text-decoration: none;
+    padding: auto;
+  }
+
+  .btnCall a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #my-call {
+    margin-left: 0 !important;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .utmCall-wrap {
+    padding-left: 0px;
+  }
+
+  .modal-body img {
+    margin-left: 20px;
+  }
+
+  #my-buttons button {
+    font-size: 12px;
+  }
+
+  .btnCall .nbrs {
+    font-size: 18px;
+  }
+
+}
+
+/* Ensure modal appears above header & footer */
+.modal {
+  z-index: 1000000 !important;
+}
+
+
+/* Re-enable click ONLY on the phone button */
+.btnCall a {
+  pointer-events: auto;
+}
+
+@media (min-width: 577px) {
+  #exampleModal {
+    display: none !important;
+  }
+}
+
+
+.modal.show {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.modal-backdrop {
+  opacity: 1 !important;
+  background: #fff !important;
+}

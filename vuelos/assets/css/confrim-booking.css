@@ -1,0 +1,264 @@
+
+ /* -------------------- General Form & Card Styling -------------------- */
+ .booking-list-area {
+     color: #1e293b;
+     margin: 50px auto;
+     max-width: 1200px;
+ }
+
+ .booking-card {
+     background-color: #ffffff;
+     border-radius: 12px;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+     transition: all 0.3s ease-in-out;
+     padding: 30px;
+ }
+
+ .booking-card:hover {
+     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+ }
+
+ .booking-card__title h2 {
+     font-size: 2rem;
+     font-weight: 700;
+     color: #111827;
+ }
+
+ .booking-card__title hr {
+     border: 2px solid #ef4444;
+     width: 60px;
+     margin-left: 0;
+     margin-bottom: 20px;
+ }
+
+ .booking-card__form h4 {
+     font-size: 1.25rem;
+     font-weight: 600;
+     margin-top: 20px;
+     color: #111827;
+ }
+
+ .booking-card__form label {
+     font-weight: 500;
+     color: #374151;
+ }
+
+ .booking-card__form .form-control {
+     border-radius: 8px;
+     border: 1px solid #d1d5db;
+     padding: 10px 12px;
+     font-size: 0.95rem;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .booking-card__form .form-control:focus {
+     outline: none;
+     border-color: #ef4444;
+     box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+ }
+
+ .booking-card__form select.form-control {
+     appearance: none;
+     background: url("data:image/svg+xml,%3Csvg fill='gray' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 12px center;
+     background-color: #ffffff;
+     background-size: 16px;
+ }
+
+ .search-btn1 {
+     background-color: #ef4444;
+     color: #ffffff;
+     padding: 12px 40px;
+     border: none;
+     border-radius: 8px;
+     font-size: 1rem;
+     font-weight: 600;
+     cursor: pointer;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .search-btn1:hover {
+     background-color: #dc2626;
+     transform: translateY(-2px);
+ }
+
+ .booking-card__form input[type="checkbox"] {
+     width: 18px;
+     height: 18px;
+ }
+
+ .booking-card__form p,
+ .info-text {
+     font-size: 0.9rem;
+     color: #6b7280;
+ }
+
+ .my-card h5 {
+     font-weight: 600;
+     color: #111827;
+     margin-bottom: 12px;
+ }
+
+ /* -------------------- Responsive Contact Fields -------------------- */
+ .responsive-contact {
+     display: flex;
+     gap: 20px;
+     flex-wrap: wrap;
+ }
+
+ .flex-item {
+     flex: 1;
+     min-width: 250px;
+ }
+
+ .flex-item label {
+     display: block;
+     font-weight: 500;
+     margin-bottom: 5px;
+ }
+
+ .flex-item .form-control {
+     width: 100%;
+     padding: 10px 12px;
+     border-radius: 8px;
+     border: 1px solid #d1d5db;
+     font-size: 0.95rem;
+ }
+
+ @media (max-width: 768px) {
+     .responsive-contact {
+         flex-direction: column;
+     }
+
+     .flex-item {
+         min-width: 100%;
+     }
+ }
+
+ /* -------------------- Adult Fields (One Row Desktop) -------------------- */
+ /* Adult Details - Responsive Row */
+ .adult-row {
+     display: flex;
+     gap: 15px;
+     flex-wrap: wrap;
+     margin-top: 10px;
+ }
+
+ .adult-row .flex-item {
+     flex: 1;
+     min-width: 150px;
+     /* ensures it doesn't shrink too much */
+ }
+
+ .adult-row label {
+     display: block;
+     margin-bottom: 5px;
+     font-weight: 500;
+ }
+
+ .adult-row .form-control {
+     width: 100%;
+     padding: 8px 10px;
+     border-radius: 6px;
+     border: 1px solid #ccc;
+     font-size: 0.95rem;
+ }
+
+ /* Mobile adjustments */
+ @media (max-width: 768px) {
+     .adult-row {
+         flex-direction: column;
+     }
+
+     .adult-row .flex-item {
+         min-width: 100%;
+     }
+ }
+
+ /* -------------------- Card & Billing Section -------------------- */
+ .card-billing-row {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 15px;
+     margin-top: 10px;
+ }
+
+ .card-billing-row .form-group {
+     flex: 1;
+     min-width: 180px;
+ }
+
+ /* Card Number & Type */
+ .card-billing-row.card-top .form-group {
+     flex: 1 1 48%;
+ }
+
+ /* Card Holder + Expiry + CVV */
+ .card-billing-row.card-middle .form-group:nth-child(1) {
+     flex: 1 1 50%;
+ }
+
+ .card-billing-row.card-middle .form-group:nth-child(2),
+ .card-billing-row.card-middle .form-group:nth-child(3),
+ .card-billing-row.card-middle .form-group:nth-child(4) {
+     flex: 1 1 16%;
+ }
+
+ /* Billing Address */
+ .card-billing-row.billing-address .form-group {
+     flex: 1 1 48%;
+ }
+
+ /* Full width for smaller screens */
+ @media (max-width: 768px) {
+     .card-billing-row {
+         flex-direction: column;
+     }
+
+     .card-billing-row .form-group {
+         min-width: 100%;
+     }
+
+     .card-billing-row.card-middle .form-group:nth-child(2),
+     .card-billing-row.card-middle .form-group:nth-child(3),
+     .card-billing-row.card-middle .form-group:nth-child(4) {
+         min-width: 100%;
+     }
+ }
+
+ /* Input & Select Styling */
+ .card-billing-row .form-control {
+     width: 100%;
+     padding: 10px 12px;
+     border-radius: 8px;
+     border: 1px solid #d1d5db;
+     font-size: 0.95rem;
+ }
+
+ .card-billing-row label {
+     font-weight: 500;
+     margin-bottom: 5px;
+     display: block;
+ }
+
+ /* Card Type Icon */
+ #card_type_icon {
+     display: inline-block;
+     width: 40px;
+     margin-top: 10px;
+ }
+
+ /* -------------------- Mobile Adjustments -------------------- */
+ @media (max-width: 576px) {
+     .booking-card__title h2 {
+         font-size: 1.75rem;
+     }
+
+     .booking-card__form h4 {
+         font-size: 1.1rem;
+     }
+
+     .search-btn1 {
+         width: 100%;
+         padding: 12px 0;
+     }
+ }
